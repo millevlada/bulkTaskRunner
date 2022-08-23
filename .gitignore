@@ -1,0 +1,17 @@
+*.iml
+target
+.idea
+debug.log
+*.class
+*.swp
+*.old
+*.log
+java/portalcore/gen
+bin
+obj
+gen
+*.dll
+packages
+
+
+
