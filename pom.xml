@@ -31,6 +31,7 @@
 		<module>bulk-task-runner</module>
 		<module>data-augmentation</module>
 		<module>utils</module>
+		<module>bpopovic</module>
 	</modules>
 
 	<dependencyManagement>
