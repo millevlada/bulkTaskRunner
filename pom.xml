@@ -1,0 +1,55 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.htec</groupId>
+	<artifactId>multithreading-root</artifactId>
+	<version>1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>multithreading</name>
+	<description>Set of multithreading exercise</description>
+
+	<organization>
+		<name>Htec</name>
+	</organization>
+
+	<properties>
+		<!-- JDK properties -->
+		<source.jdk.version>11</source.jdk.version>
+		<target.jdk.version>11</target.jdk.version>
+		<maven.compiler.source>11</maven.compiler.source>
+		<maven.compiler.target>11</maven.compiler.target>
+		<org.eclipse.jdt.annotation.version>1.1.100</org.eclipse.jdt.annotation.version>
+	</properties>
+
+	<prerequisites>
+		<maven>3.0.5</maven>
+	</prerequisites>
+
+	<modules>
+		<module>bulk-task-runner</module>
+		<module>data-augmentation</module>
+		<module>utils</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.eclipse.jdt</groupId>
+				<artifactId>org.eclipse.jdt.annotation</artifactId>
+				<version>${org.eclipse.jdt.annotation.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.htec</groupId>
+				<artifactId>bulk-task-runner</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>com.htec</groupId>
+				<artifactId>utils</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+</project>
